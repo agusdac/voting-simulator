@@ -7,7 +7,7 @@ Brief + spec ready for fire-in-the-hole of **v0.1.0**: a callable model that tak
 ## Notes
 
 - Domain: democratic election simulation, simple to complex.
-- Slug: `minimal-model`. Version: `v0.1.0` (first, explicit request).
+- Slug: `minimal-model`. Version: `v0.1.0` (first, explicit request). Same unreleased version also charts [json-scenario](../json-scenario/map.md).
 - Plan, don't do: pathfinder locks decisions and docs; it does not implement.
 - Skills: grill-me (HITL), fire-in-the-hole + tdd when building.
 - Stack: Python ≥3.12, `voting-simulator`.

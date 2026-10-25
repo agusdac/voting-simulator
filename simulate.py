@@ -1,4 +1,6 @@
+import json
 from dataclasses import dataclass
+from pathlib import Path
 from random import Random
 
 from entities import PoliticalParty, Voter
@@ -13,19 +15,16 @@ class ElectionResult:
     tied: tuple[PoliticalParty, ...]
 
 
-def simulate(
-    n_parties: int,
-    n_voters: int,
-    seed: int | None = None,
+def _elect(
+    parties: tuple[PoliticalParty, ...],
+    voter_ids: list[int],
+    seed: int | None,
 ) -> ElectionResult:
-    if n_parties < 1 or n_voters < 1:
-        raise ValueError("n_parties and n_voters must be >= 1")
     rng = Random(seed)
-    parties = tuple(PoliticalParty(id=i) for i in range(1, n_parties + 1))
     raw_votes = []
-    for i in range(1, n_voters + 1):
+    for voter_id in voter_ids:
         party = rng.choice(parties)
-        voter = Voter(id=i, vote=party)
+        voter = Voter(id=voter_id, vote=party)
         raw_votes.append((voter, party))
     counts = {party.id: 0 for party in parties}
     for _, party in raw_votes:
@@ -41,3 +40,28 @@ def simulate(
         winner=winner,
         tied=tied,
     )
+
+
+def simulate(
+    n_parties: int,
+    n_voters: int,
+    seed: int | None = None,
+) -> ElectionResult:
+    if n_parties < 1 or n_voters < 1:
+        raise ValueError("n_parties and n_voters must be >= 1")
+    parties = tuple(PoliticalParty(id=i) for i in range(1, n_parties + 1))
+    return _elect(parties, list(range(1, n_voters + 1)), seed)
+
+
+def simulate_from_scenario(path: str | Path) -> ElectionResult:
+    data = json.loads(Path(path).read_text(encoding="utf-8"))
+    try:
+        party_items = data["parties"]
+        voter_items = data["voters"]
+        parties = tuple(PoliticalParty(id=item["id"]) for item in party_items)
+        voter_ids = [item["id"] for item in voter_items]
+    except KeyError as exc:
+        raise ValueError("scenario must include parties and voters with id") from exc
+    if not parties or not voter_ids:
+        raise ValueError("parties and voters must be non-empty")
+    return _elect(parties, voter_ids, data.get("seed"))

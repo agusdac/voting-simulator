@@ -3,6 +3,6 @@
     "status": "unreleased",
     "date": null,
     "theme": "Callable minimal model",
-    "features": ["minimal-model"]
+    "features": ["minimal-model", "json-scenario"]
   }
 }
