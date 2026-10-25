@@ -1,6 +1,7 @@
 import json
 
 from main import main
+from test_budget_affinity import _shares, _traits
 
 
 def test_cli_scenario_prints_the_same_payload_shape(tmp_path, capsys, monkeypatch):
@@ -9,8 +10,14 @@ def test_cli_scenario_prints_the_same_payload_shape(tmp_path, capsys, monkeypatc
         json.dumps(
             {
                 "seed": 1,
-                "parties": [{"id": 1}, {"id": 2}],
-                "voters": [{"id": 1}, {"id": 2}],
+                "parties": [
+                    {"id": 1, **_shares(health=1.0)},
+                    {"id": 2, **_shares(defense=1.0)},
+                ],
+                "voters": [
+                    {"id": 1, **_traits(health_status=1)},
+                    {"id": 2, **_traits(health_status=1)},
+                ],
             }
         )
     )

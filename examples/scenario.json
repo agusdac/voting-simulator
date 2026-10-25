@@ -1,316 +1,1042 @@
 {
-  "seed": 2,
   "parties": [
     {
-      "id": 1
+      "id": 1,
+      "health": 0.25,
+      "education": 0.2,
+      "infrastructure": 0.1,
+      "defense": 0.05,
+      "social_protection": 0.2,
+      "environment": 0.08,
+      "housing": 0.07,
+      "research": 0.03,
+      "public_order": 0.02
     },
     {
-      "id": 2
+      "id": 2,
+      "health": 0.1,
+      "education": 0.08,
+      "infrastructure": 0.12,
+      "defense": 0.3,
+      "social_protection": 0.08,
+      "environment": 0.05,
+      "housing": 0.07,
+      "research": 0.05,
+      "public_order": 0.15
     },
     {
-      "id": 3
+      "id": 3,
+      "health": 0.12,
+      "education": 0.22,
+      "infrastructure": 0.15,
+      "defense": 0.05,
+      "social_protection": 0.1,
+      "environment": 0.18,
+      "housing": 0.08,
+      "research": 0.08,
+      "public_order": 0.02
     }
   ],
   "voters": [
     {
-      "id": 1
-    },
-    {
-      "id": 2
-    },
-    {
-      "id": 3
-    },
-    {
-      "id": 4
-    },
-    {
-      "id": 5
-    },
-    {
-      "id": 6
-    },
-    {
-      "id": 7
-    },
-    {
-      "id": 8
-    },
-    {
-      "id": 9
-    },
-    {
-      "id": 10
-    },
-    {
-      "id": 11
-    },
-    {
-      "id": 12
-    },
-    {
-      "id": 13
-    },
-    {
-      "id": 14
-    },
-    {
-      "id": 15
-    },
-    {
-      "id": 16
-    },
-    {
-      "id": 17
-    },
-    {
-      "id": 18
-    },
-    {
-      "id": 19
-    },
-    {
-      "id": 20
-    },
-    {
-      "id": 21
-    },
-    {
-      "id": 22
-    },
-    {
-      "id": 23
-    },
-    {
-      "id": 24
-    },
-    {
-      "id": 25
-    },
-    {
-      "id": 26
-    },
-    {
-      "id": 27
-    },
-    {
-      "id": 28
-    },
-    {
-      "id": 29
-    },
-    {
-      "id": 30
-    },
-    {
-      "id": 31
-    },
-    {
-      "id": 32
-    },
-    {
-      "id": 33
-    },
-    {
-      "id": 34
-    },
-    {
-      "id": 35
-    },
-    {
-      "id": 36
-    },
-    {
-      "id": 37
-    },
-    {
-      "id": 38
-    },
-    {
-      "id": 39
-    },
-    {
-      "id": 40
-    },
-    {
-      "id": 41
-    },
-    {
-      "id": 42
-    },
-    {
-      "id": 43
-    },
-    {
-      "id": 44
-    },
-    {
-      "id": 45
-    },
-    {
-      "id": 46
-    },
-    {
-      "id": 47
-    },
-    {
-      "id": 48
-    },
-    {
-      "id": 49
-    },
-    {
-      "id": 50
-    },
-    {
-      "id": 51
-    },
-    {
-      "id": 52
-    },
-    {
-      "id": 53
-    },
-    {
-      "id": 54
-    },
-    {
-      "id": 55
-    },
-    {
-      "id": 56
-    },
-    {
-      "id": 57
-    },
-    {
-      "id": 58
-    },
-    {
-      "id": 59
-    },
-    {
-      "id": 60
-    },
-    {
-      "id": 61
-    },
-    {
-      "id": 62
-    },
-    {
-      "id": 63
-    },
-    {
-      "id": 64
-    },
-    {
-      "id": 65
-    },
-    {
-      "id": 66
-    },
-    {
-      "id": 67
-    },
-    {
-      "id": 68
-    },
-    {
-      "id": 69
-    },
-    {
-      "id": 70
-    },
-    {
-      "id": 71
-    },
-    {
-      "id": 72
-    },
-    {
-      "id": 73
-    },
-    {
-      "id": 74
-    },
-    {
-      "id": 75
-    },
-    {
-      "id": 76
-    },
-    {
-      "id": 77
-    },
-    {
-      "id": 78
-    },
-    {
-      "id": 79
-    },
-    {
-      "id": 80
-    },
-    {
-      "id": 81
-    },
-    {
-      "id": 82
-    },
-    {
-      "id": 83
-    },
-    {
-      "id": 84
-    },
-    {
-      "id": 85
-    },
-    {
-      "id": 86
-    },
-    {
-      "id": 87
-    },
-    {
-      "id": 88
-    },
-    {
-      "id": 89
-    },
-    {
-      "id": 90
-    },
-    {
-      "id": 91
-    },
-    {
-      "id": 92
-    },
-    {
-      "id": 93
-    },
-    {
-      "id": 94
-    },
-    {
-      "id": 95
-    },
-    {
-      "id": 96
-    },
-    {
-      "id": 97
-    },
-    {
-      "id": 98
-    },
-    {
-      "id": 99
-    },
-    {
-      "id": 100
+      "id": 1,
+      "age": 19,
+      "dependents": 1,
+      "urban": 1,
+      "health_status": 1,
+      "education_level": 1,
+      "veteran": 0,
+      "gender": 1
+    },
+    {
+      "id": 2,
+      "age": 20,
+      "dependents": 2,
+      "urban": 0,
+      "health_status": 2,
+      "education_level": 2,
+      "veteran": 0,
+      "gender": 0
+    },
+    {
+      "id": 3,
+      "age": 21,
+      "dependents": 3,
+      "urban": 1,
+      "health_status": 3,
+      "education_level": 3,
+      "veteran": 0,
+      "gender": 1
+    },
+    {
+      "id": 4,
+      "age": 22,
+      "dependents": 0,
+      "urban": 0,
+      "health_status": 4,
+      "education_level": 4,
+      "veteran": 0,
+      "gender": 0
+    },
+    {
+      "id": 5,
+      "age": 23,
+      "dependents": 1,
+      "urban": 1,
+      "health_status": 0,
+      "education_level": 0,
+      "veteran": 0,
+      "gender": 1
+    },
+    {
+      "id": 6,
+      "age": 24,
+      "dependents": 2,
+      "urban": 0,
+      "health_status": 1,
+      "education_level": 1,
+      "veteran": 0,
+      "gender": 0
+    },
+    {
+      "id": 7,
+      "age": 25,
+      "dependents": 3,
+      "urban": 1,
+      "health_status": 2,
+      "education_level": 2,
+      "veteran": 0,
+      "gender": 1
+    },
+    {
+      "id": 8,
+      "age": 26,
+      "dependents": 0,
+      "urban": 0,
+      "health_status": 3,
+      "education_level": 3,
+      "veteran": 0,
+      "gender": 0
+    },
+    {
+      "id": 9,
+      "age": 27,
+      "dependents": 1,
+      "urban": 1,
+      "health_status": 4,
+      "education_level": 4,
+      "veteran": 0,
+      "gender": 1
+    },
+    {
+      "id": 10,
+      "age": 28,
+      "dependents": 2,
+      "urban": 0,
+      "health_status": 0,
+      "education_level": 0,
+      "veteran": 1,
+      "gender": 0
+    },
+    {
+      "id": 11,
+      "age": 29,
+      "dependents": 3,
+      "urban": 1,
+      "health_status": 1,
+      "education_level": 1,
+      "veteran": 0,
+      "gender": 1
+    },
+    {
+      "id": 12,
+      "age": 30,
+      "dependents": 0,
+      "urban": 0,
+      "health_status": 2,
+      "education_level": 2,
+      "veteran": 0,
+      "gender": 0
+    },
+    {
+      "id": 13,
+      "age": 31,
+      "dependents": 1,
+      "urban": 1,
+      "health_status": 3,
+      "education_level": 3,
+      "veteran": 0,
+      "gender": 1
+    },
+    {
+      "id": 14,
+      "age": 32,
+      "dependents": 2,
+      "urban": 0,
+      "health_status": 4,
+      "education_level": 4,
+      "veteran": 0,
+      "gender": 0
+    },
+    {
+      "id": 15,
+      "age": 33,
+      "dependents": 3,
+      "urban": 1,
+      "health_status": 0,
+      "education_level": 0,
+      "veteran": 0,
+      "gender": 1
+    },
+    {
+      "id": 16,
+      "age": 34,
+      "dependents": 0,
+      "urban": 0,
+      "health_status": 1,
+      "education_level": 1,
+      "veteran": 0,
+      "gender": 0
+    },
+    {
+      "id": 17,
+      "age": 35,
+      "dependents": 1,
+      "urban": 1,
+      "health_status": 2,
+      "education_level": 2,
+      "veteran": 0,
+      "gender": 1
+    },
+    {
+      "id": 18,
+      "age": 36,
+      "dependents": 2,
+      "urban": 0,
+      "health_status": 3,
+      "education_level": 3,
+      "veteran": 0,
+      "gender": 0
+    },
+    {
+      "id": 19,
+      "age": 37,
+      "dependents": 3,
+      "urban": 1,
+      "health_status": 4,
+      "education_level": 4,
+      "veteran": 0,
+      "gender": 1
+    },
+    {
+      "id": 20,
+      "age": 38,
+      "dependents": 0,
+      "urban": 0,
+      "health_status": 0,
+      "education_level": 0,
+      "veteran": 1,
+      "gender": 0
+    },
+    {
+      "id": 21,
+      "age": 39,
+      "dependents": 1,
+      "urban": 1,
+      "health_status": 1,
+      "education_level": 1,
+      "veteran": 0,
+      "gender": 1
+    },
+    {
+      "id": 22,
+      "age": 40,
+      "dependents": 2,
+      "urban": 0,
+      "health_status": 2,
+      "education_level": 2,
+      "veteran": 0,
+      "gender": 0
+    },
+    {
+      "id": 23,
+      "age": 41,
+      "dependents": 3,
+      "urban": 1,
+      "health_status": 3,
+      "education_level": 3,
+      "veteran": 0,
+      "gender": 1
+    },
+    {
+      "id": 24,
+      "age": 42,
+      "dependents": 0,
+      "urban": 0,
+      "health_status": 4,
+      "education_level": 4,
+      "veteran": 0,
+      "gender": 0
+    },
+    {
+      "id": 25,
+      "age": 43,
+      "dependents": 1,
+      "urban": 1,
+      "health_status": 0,
+      "education_level": 0,
+      "veteran": 0,
+      "gender": 1
+    },
+    {
+      "id": 26,
+      "age": 44,
+      "dependents": 2,
+      "urban": 0,
+      "health_status": 1,
+      "education_level": 1,
+      "veteran": 0,
+      "gender": 0
+    },
+    {
+      "id": 27,
+      "age": 45,
+      "dependents": 3,
+      "urban": 1,
+      "health_status": 2,
+      "education_level": 2,
+      "veteran": 0,
+      "gender": 1
+    },
+    {
+      "id": 28,
+      "age": 46,
+      "dependents": 0,
+      "urban": 0,
+      "health_status": 3,
+      "education_level": 3,
+      "veteran": 0,
+      "gender": 0
+    },
+    {
+      "id": 29,
+      "age": 47,
+      "dependents": 1,
+      "urban": 1,
+      "health_status": 4,
+      "education_level": 4,
+      "veteran": 0,
+      "gender": 1
+    },
+    {
+      "id": 30,
+      "age": 48,
+      "dependents": 2,
+      "urban": 0,
+      "health_status": 0,
+      "education_level": 0,
+      "veteran": 1,
+      "gender": 0
+    },
+    {
+      "id": 31,
+      "age": 49,
+      "dependents": 3,
+      "urban": 1,
+      "health_status": 1,
+      "education_level": 1,
+      "veteran": 0,
+      "gender": 1
+    },
+    {
+      "id": 32,
+      "age": 50,
+      "dependents": 0,
+      "urban": 0,
+      "health_status": 2,
+      "education_level": 2,
+      "veteran": 0,
+      "gender": 0
+    },
+    {
+      "id": 33,
+      "age": 51,
+      "dependents": 1,
+      "urban": 1,
+      "health_status": 3,
+      "education_level": 3,
+      "veteran": 0,
+      "gender": 1
+    },
+    {
+      "id": 34,
+      "age": 52,
+      "dependents": 2,
+      "urban": 0,
+      "health_status": 4,
+      "education_level": 4,
+      "veteran": 0,
+      "gender": 0
+    },
+    {
+      "id": 35,
+      "age": 53,
+      "dependents": 3,
+      "urban": 1,
+      "health_status": 0,
+      "education_level": 0,
+      "veteran": 0,
+      "gender": 1
+    },
+    {
+      "id": 36,
+      "age": 54,
+      "dependents": 0,
+      "urban": 0,
+      "health_status": 1,
+      "education_level": 1,
+      "veteran": 0,
+      "gender": 0
+    },
+    {
+      "id": 37,
+      "age": 55,
+      "dependents": 1,
+      "urban": 1,
+      "health_status": 2,
+      "education_level": 2,
+      "veteran": 0,
+      "gender": 1
+    },
+    {
+      "id": 38,
+      "age": 56,
+      "dependents": 2,
+      "urban": 0,
+      "health_status": 3,
+      "education_level": 3,
+      "veteran": 0,
+      "gender": 0
+    },
+    {
+      "id": 39,
+      "age": 57,
+      "dependents": 3,
+      "urban": 1,
+      "health_status": 4,
+      "education_level": 4,
+      "veteran": 0,
+      "gender": 1
+    },
+    {
+      "id": 40,
+      "age": 58,
+      "dependents": 0,
+      "urban": 0,
+      "health_status": 0,
+      "education_level": 0,
+      "veteran": 1,
+      "gender": 0
+    },
+    {
+      "id": 41,
+      "age": 59,
+      "dependents": 1,
+      "urban": 1,
+      "health_status": 1,
+      "education_level": 1,
+      "veteran": 0,
+      "gender": 1
+    },
+    {
+      "id": 42,
+      "age": 60,
+      "dependents": 2,
+      "urban": 0,
+      "health_status": 2,
+      "education_level": 2,
+      "veteran": 0,
+      "gender": 0
+    },
+    {
+      "id": 43,
+      "age": 61,
+      "dependents": 3,
+      "urban": 1,
+      "health_status": 3,
+      "education_level": 3,
+      "veteran": 0,
+      "gender": 1
+    },
+    {
+      "id": 44,
+      "age": 62,
+      "dependents": 0,
+      "urban": 0,
+      "health_status": 4,
+      "education_level": 4,
+      "veteran": 0,
+      "gender": 0
+    },
+    {
+      "id": 45,
+      "age": 63,
+      "dependents": 1,
+      "urban": 1,
+      "health_status": 0,
+      "education_level": 0,
+      "veteran": 0,
+      "gender": 1
+    },
+    {
+      "id": 46,
+      "age": 64,
+      "dependents": 2,
+      "urban": 0,
+      "health_status": 1,
+      "education_level": 1,
+      "veteran": 0,
+      "gender": 0
+    },
+    {
+      "id": 47,
+      "age": 65,
+      "dependents": 3,
+      "urban": 1,
+      "health_status": 2,
+      "education_level": 2,
+      "veteran": 0,
+      "gender": 1
+    },
+    {
+      "id": 48,
+      "age": 66,
+      "dependents": 0,
+      "urban": 0,
+      "health_status": 3,
+      "education_level": 3,
+      "veteran": 0,
+      "gender": 0
+    },
+    {
+      "id": 49,
+      "age": 67,
+      "dependents": 1,
+      "urban": 1,
+      "health_status": 4,
+      "education_level": 4,
+      "veteran": 0,
+      "gender": 1
+    },
+    {
+      "id": 50,
+      "age": 68,
+      "dependents": 2,
+      "urban": 0,
+      "health_status": 0,
+      "education_level": 0,
+      "veteran": 1,
+      "gender": 0
+    },
+    {
+      "id": 51,
+      "age": 69,
+      "dependents": 3,
+      "urban": 1,
+      "health_status": 1,
+      "education_level": 1,
+      "veteran": 0,
+      "gender": 1
+    },
+    {
+      "id": 52,
+      "age": 70,
+      "dependents": 0,
+      "urban": 0,
+      "health_status": 2,
+      "education_level": 2,
+      "veteran": 0,
+      "gender": 0
+    },
+    {
+      "id": 53,
+      "age": 71,
+      "dependents": 1,
+      "urban": 1,
+      "health_status": 3,
+      "education_level": 3,
+      "veteran": 0,
+      "gender": 1
+    },
+    {
+      "id": 54,
+      "age": 72,
+      "dependents": 2,
+      "urban": 0,
+      "health_status": 4,
+      "education_level": 4,
+      "veteran": 0,
+      "gender": 0
+    },
+    {
+      "id": 55,
+      "age": 73,
+      "dependents": 3,
+      "urban": 1,
+      "health_status": 0,
+      "education_level": 0,
+      "veteran": 0,
+      "gender": 1
+    },
+    {
+      "id": 56,
+      "age": 74,
+      "dependents": 0,
+      "urban": 0,
+      "health_status": 1,
+      "education_level": 1,
+      "veteran": 0,
+      "gender": 0
+    },
+    {
+      "id": 57,
+      "age": 75,
+      "dependents": 1,
+      "urban": 1,
+      "health_status": 2,
+      "education_level": 2,
+      "veteran": 0,
+      "gender": 1
+    },
+    {
+      "id": 58,
+      "age": 76,
+      "dependents": 2,
+      "urban": 0,
+      "health_status": 3,
+      "education_level": 3,
+      "veteran": 0,
+      "gender": 0
+    },
+    {
+      "id": 59,
+      "age": 77,
+      "dependents": 3,
+      "urban": 1,
+      "health_status": 4,
+      "education_level": 4,
+      "veteran": 0,
+      "gender": 1
+    },
+    {
+      "id": 60,
+      "age": 18,
+      "dependents": 0,
+      "urban": 0,
+      "health_status": 0,
+      "education_level": 0,
+      "veteran": 1,
+      "gender": 0
+    },
+    {
+      "id": 61,
+      "age": 19,
+      "dependents": 1,
+      "urban": 1,
+      "health_status": 1,
+      "education_level": 1,
+      "veteran": 0,
+      "gender": 1
+    },
+    {
+      "id": 62,
+      "age": 20,
+      "dependents": 2,
+      "urban": 0,
+      "health_status": 2,
+      "education_level": 2,
+      "veteran": 0,
+      "gender": 0
+    },
+    {
+      "id": 63,
+      "age": 21,
+      "dependents": 3,
+      "urban": 1,
+      "health_status": 3,
+      "education_level": 3,
+      "veteran": 0,
+      "gender": 1
+    },
+    {
+      "id": 64,
+      "age": 22,
+      "dependents": 0,
+      "urban": 0,
+      "health_status": 4,
+      "education_level": 4,
+      "veteran": 0,
+      "gender": 0
+    },
+    {
+      "id": 65,
+      "age": 23,
+      "dependents": 1,
+      "urban": 1,
+      "health_status": 0,
+      "education_level": 0,
+      "veteran": 0,
+      "gender": 1
+    },
+    {
+      "id": 66,
+      "age": 24,
+      "dependents": 2,
+      "urban": 0,
+      "health_status": 1,
+      "education_level": 1,
+      "veteran": 0,
+      "gender": 0
+    },
+    {
+      "id": 67,
+      "age": 25,
+      "dependents": 3,
+      "urban": 1,
+      "health_status": 2,
+      "education_level": 2,
+      "veteran": 0,
+      "gender": 1
+    },
+    {
+      "id": 68,
+      "age": 26,
+      "dependents": 0,
+      "urban": 0,
+      "health_status": 3,
+      "education_level": 3,
+      "veteran": 0,
+      "gender": 0
+    },
+    {
+      "id": 69,
+      "age": 27,
+      "dependents": 1,
+      "urban": 1,
+      "health_status": 4,
+      "education_level": 4,
+      "veteran": 0,
+      "gender": 1
+    },
+    {
+      "id": 70,
+      "age": 28,
+      "dependents": 2,
+      "urban": 0,
+      "health_status": 0,
+      "education_level": 0,
+      "veteran": 1,
+      "gender": 0
+    },
+    {
+      "id": 71,
+      "age": 29,
+      "dependents": 3,
+      "urban": 1,
+      "health_status": 1,
+      "education_level": 1,
+      "veteran": 0,
+      "gender": 1
+    },
+    {
+      "id": 72,
+      "age": 30,
+      "dependents": 0,
+      "urban": 0,
+      "health_status": 2,
+      "education_level": 2,
+      "veteran": 0,
+      "gender": 0
+    },
+    {
+      "id": 73,
+      "age": 31,
+      "dependents": 1,
+      "urban": 1,
+      "health_status": 3,
+      "education_level": 3,
+      "veteran": 0,
+      "gender": 1
+    },
+    {
+      "id": 74,
+      "age": 32,
+      "dependents": 2,
+      "urban": 0,
+      "health_status": 4,
+      "education_level": 4,
+      "veteran": 0,
+      "gender": 0
+    },
+    {
+      "id": 75,
+      "age": 33,
+      "dependents": 3,
+      "urban": 1,
+      "health_status": 0,
+      "education_level": 0,
+      "veteran": 0,
+      "gender": 1
+    },
+    {
+      "id": 76,
+      "age": 34,
+      "dependents": 0,
+      "urban": 0,
+      "health_status": 1,
+      "education_level": 1,
+      "veteran": 0,
+      "gender": 0
+    },
+    {
+      "id": 77,
+      "age": 35,
+      "dependents": 1,
+      "urban": 1,
+      "health_status": 2,
+      "education_level": 2,
+      "veteran": 0,
+      "gender": 1
+    },
+    {
+      "id": 78,
+      "age": 36,
+      "dependents": 2,
+      "urban": 0,
+      "health_status": 3,
+      "education_level": 3,
+      "veteran": 0,
+      "gender": 0
+    },
+    {
+      "id": 79,
+      "age": 37,
+      "dependents": 3,
+      "urban": 1,
+      "health_status": 4,
+      "education_level": 4,
+      "veteran": 0,
+      "gender": 1
+    },
+    {
+      "id": 80,
+      "age": 38,
+      "dependents": 0,
+      "urban": 0,
+      "health_status": 0,
+      "education_level": 0,
+      "veteran": 1,
+      "gender": 0
+    },
+    {
+      "id": 81,
+      "age": 39,
+      "dependents": 1,
+      "urban": 1,
+      "health_status": 1,
+      "education_level": 1,
+      "veteran": 0,
+      "gender": 1
+    },
+    {
+      "id": 82,
+      "age": 40,
+      "dependents": 2,
+      "urban": 0,
+      "health_status": 2,
+      "education_level": 2,
+      "veteran": 0,
+      "gender": 0
+    },
+    {
+      "id": 83,
+      "age": 41,
+      "dependents": 3,
+      "urban": 1,
+      "health_status": 3,
+      "education_level": 3,
+      "veteran": 0,
+      "gender": 1
+    },
+    {
+      "id": 84,
+      "age": 42,
+      "dependents": 0,
+      "urban": 0,
+      "health_status": 4,
+      "education_level": 4,
+      "veteran": 0,
+      "gender": 0
+    },
+    {
+      "id": 85,
+      "age": 43,
+      "dependents": 1,
+      "urban": 1,
+      "health_status": 0,
+      "education_level": 0,
+      "veteran": 0,
+      "gender": 1
+    },
+    {
+      "id": 86,
+      "age": 44,
+      "dependents": 2,
+      "urban": 0,
+      "health_status": 1,
+      "education_level": 1,
+      "veteran": 0,
+      "gender": 0
+    },
+    {
+      "id": 87,
+      "age": 45,
+      "dependents": 3,
+      "urban": 1,
+      "health_status": 2,
+      "education_level": 2,
+      "veteran": 0,
+      "gender": 1
+    },
+    {
+      "id": 88,
+      "age": 46,
+      "dependents": 0,
+      "urban": 0,
+      "health_status": 3,
+      "education_level": 3,
+      "veteran": 0,
+      "gender": 0
+    },
+    {
+      "id": 89,
+      "age": 47,
+      "dependents": 1,
+      "urban": 1,
+      "health_status": 4,
+      "education_level": 4,
+      "veteran": 0,
+      "gender": 1
+    },
+    {
+      "id": 90,
+      "age": 48,
+      "dependents": 2,
+      "urban": 0,
+      "health_status": 0,
+      "education_level": 0,
+      "veteran": 1,
+      "gender": 0
+    },
+    {
+      "id": 91,
+      "age": 49,
+      "dependents": 3,
+      "urban": 1,
+      "health_status": 1,
+      "education_level": 1,
+      "veteran": 0,
+      "gender": 1
+    },
+    {
+      "id": 92,
+      "age": 50,
+      "dependents": 0,
+      "urban": 0,
+      "health_status": 2,
+      "education_level": 2,
+      "veteran": 0,
+      "gender": 0
+    },
+    {
+      "id": 93,
+      "age": 51,
+      "dependents": 1,
+      "urban": 1,
+      "health_status": 3,
+      "education_level": 3,
+      "veteran": 0,
+      "gender": 1
+    },
+    {
+      "id": 94,
+      "age": 52,
+      "dependents": 2,
+      "urban": 0,
+      "health_status": 4,
+      "education_level": 4,
+      "veteran": 0,
+      "gender": 0
+    },
+    {
+      "id": 95,
+      "age": 53,
+      "dependents": 3,
+      "urban": 1,
+      "health_status": 0,
+      "education_level": 0,
+      "veteran": 0,
+      "gender": 1
+    },
+    {
+      "id": 96,
+      "age": 54,
+      "dependents": 0,
+      "urban": 0,
+      "health_status": 1,
+      "education_level": 1,
+      "veteran": 0,
+      "gender": 0
+    },
+    {
+      "id": 97,
+      "age": 55,
+      "dependents": 1,
+      "urban": 1,
+      "health_status": 2,
+      "education_level": 2,
+      "veteran": 0,
+      "gender": 1
+    },
+    {
+      "id": 98,
+      "age": 56,
+      "dependents": 2,
+      "urban": 0,
+      "health_status": 3,
+      "education_level": 3,
+      "veteran": 0,
+      "gender": 0
+    },
+    {
+      "id": 99,
+      "age": 57,
+      "dependents": 3,
+      "urban": 1,
+      "health_status": 4,
+      "education_level": 4,
+      "veteran": 0,
+      "gender": 1
+    },
+    {
+      "id": 100,
+      "age": 58,
+      "dependents": 0,
+      "urban": 0,
+      "health_status": 0,
+      "education_level": 0,
+      "veteran": 1,
+      "gender": 0
     }
   ]
 }

@@ -1,4 +1,10 @@
 {
+  "v0.2.0": {
+    "status": "unreleased",
+    "date": null,
+    "theme": "Budget affinity voting",
+    "features": ["budget-affinity"]
+  },
   "v0.1.0": {
     "status": "unreleased",
     "date": null,
