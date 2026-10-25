@@ -1,0 +1,5 @@
+interface:
+  display_name: "Pathfinder"
+  short_description: "Map decisions, then write slim product docs"
+policy:
+  allow_implicit_invocation: true
