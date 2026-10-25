@@ -1,4 +1,10 @@
 {
+  "v0.3.0": {
+    "status": "unreleased",
+    "date": null,
+    "theme": "Party spectrum from GDP shares",
+    "features": ["party-spectrum"]
+  },
   "v0.2.0": {
     "status": "unreleased",
     "date": null,

@@ -1,16 +1,5 @@
-from entities import PoliticalParty, Voter
+from entities import SHARE_NAMES, PoliticalParty, Voter
 
-SHARE_NAMES = (
-    "health",
-    "education",
-    "infrastructure",
-    "defense",
-    "social_protection",
-    "environment",
-    "housing",
-    "research",
-    "public_order",
-)
 TRAIT_NAMES = (
     "age",
     "dependents",

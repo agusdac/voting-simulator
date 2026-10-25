@@ -2,19 +2,9 @@ import json
 
 import pytest
 
+from entities import SHARE_NAMES
 from simulate import simulate, simulate_from_scenario
 
-SHARES = (
-    "health",
-    "education",
-    "infrastructure",
-    "defense",
-    "social_protection",
-    "environment",
-    "housing",
-    "research",
-    "public_order",
-)
 TRAITS = (
     "age",
     "dependents",
@@ -27,7 +17,7 @@ TRAITS = (
 
 
 def _shares(**overrides):
-    data = {name: 0.0 for name in SHARES}
+    data = {name: 0.0 for name in SHARE_NAMES}
     data.update(overrides)
     return data
 

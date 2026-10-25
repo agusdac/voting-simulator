@@ -1,10 +1,9 @@
 import json
-import math
 from dataclasses import dataclass
 from pathlib import Path
 from random import Random
 
-from affinity import SHARE_NAMES, TRAIT_NAMES, choose_party
+from affinity import TRAIT_NAMES, choose_party
 from entities import PoliticalParty, Voter
 
 
@@ -62,20 +61,6 @@ def simulate(
     return _elect(parties, list(range(1, n_voters + 1)), seed)
 
 
-def _parse_party(item: dict) -> PoliticalParty:
-    try:
-        shares = {name: item[name] for name in SHARE_NAMES}
-        party_id = item["id"]
-    except KeyError as exc:
-        raise ValueError("party must include id and all GDP shares") from exc
-    for value in shares.values():
-        if not 0 <= value <= 1:
-            raise ValueError("GDP shares must be in [0, 1]")
-    if not math.isclose(sum(shares.values()), 1.0, abs_tol=1e-9):
-        raise ValueError("a party's GDP shares must sum to 1")
-    return PoliticalParty(id=party_id, **shares)
-
-
 def _parse_voter(item: dict) -> Voter:
     try:
         traits = {name: item[name] for name in TRAIT_NAMES}
@@ -92,7 +77,7 @@ def simulate_from_scenario(path: str | Path) -> ElectionResult:
         voter_items = data["voters"]
     except KeyError as exc:
         raise ValueError("scenario must include parties and voters") from exc
-    parties = tuple(_parse_party(item) for item in party_items)
+    parties = tuple(PoliticalParty.from_mapping(item) for item in party_items)
     voters = [_parse_voter(item) for item in voter_items]
     if not parties or not voters:
         raise ValueError("parties and voters must be non-empty")
